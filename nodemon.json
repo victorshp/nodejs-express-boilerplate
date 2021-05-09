@@ -1,0 +1,10 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/**/node_modules"],
+  "verbose": true,
+  "execMap": {
+    "ts": "ts-node -r dotenv/config -r ./src/pre-build.dev -r tsconfig-paths/register"
+  },
+  "watch": ["src/"],
+  "ext": "js,json,ts"
+}
